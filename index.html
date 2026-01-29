@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="ta">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>College Admission / கல்லூரி சேர்க்கை வழிகாட்டி</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Admission Guidance | கல்லூரி சேர்க்கை வழிகாட்டி</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Engineering, Arts, Medical admission guidance in Tamil Nadu">
+    <meta name="keywords" content="college admission, engineering admission, arts admission, medical admission">
+    <meta name="author" content="College Admission Guidance">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Floating Enquiry Button -->
-<a href="#enquiry" class="floating-btn">Enquiry / சேவை கோரிக்கை</a>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/918883811839?text=I%20need%20college%20admission%20guidance"
+   class="floating-btn">
+   WhatsApp Enquiry
+</a>
 
 <!-- Header -->
 <header>
@@ -18,53 +28,74 @@
         <h1>கல்லூரி சேர்க்கை வழிகாட்டி</h1>
         <p>Engineering | Arts | Medical</p>
         <p>இயந்திரம் | கலை | மருத்துவ கல்வி</p>
+        <a href="#enquiry" class="btn">Apply Now</a>
     </div>
-    
 </header>
 
 <!-- About -->
 <section>
     <h2>About Us / எங்களைப் பற்றி</h2>
-    <p>We help students & parents choose the right college & course.</p>
-    <p>மாணவர்களுக்கு மற்றும் பெற்றோருக்கு சரியான கல்லூரி மற்றும் படிப்பை தேர்வு செய்ய உதவுகிறோம்.</p>
+    <p>
+        We help students and parents choose the right college and course.
+    </p>
+    <p>
+        மாணவர்கள் மற்றும் பெற்றோர்கள் சரியான கல்லூரி மற்றும் படிப்பை தேர்வு செய்ய உதவுகிறோம்.
+    </p>
 </section>
 
 <!-- Services -->
 <section>
-<h2>Our Services / எங்கள் சேவைகள்</h2>
-<ul>
-    <li>Admission Counselling / சேர்க்கை ஆலோசனை</li>
-    <li>College Selection / கல்லூரி தேர்வு உதவி</li>
-    <li>Application Support / விண்ணப்ப செயல்முறை ஆதரவு</li>
-    <li>Follow-up till Admission / சேர்க்கை உறுதிப்படுத்தும் வரை தொடர்ந்த பின்வற்றல்</li>
-</ul>
+    <h2>Our Services / எங்கள் சேவைகள்</h2>
+    <ul>
+        <li>Admission Counselling / சேர்க்கை ஆலோசனை</li>
+        <li>College Selection / கல்லூரி தேர்வு</li>
+        <li>Application Support / விண்ணப்ப உதவி</li>
+        <li>Follow-up till Admission / சேர்க்கை வரை பின்தொடர்வு</li>
+    </ul>
 </section>
 
 <!-- Enquiry Form -->
-<section id="enquiry">
-<h2>Admission Enquiry / சேர்க்கை கோரிக்கை</h2>
-<form action="https://formsubmit.co/gokulrajiaily@gmail.com" method="POST">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_subject" value="New Admission Enquiry / புதிய சேர்க்கை கோரிக்கை">
-<input type="hidden" name="_next" value="thankyou.html">
-<!-- Optional: auto reply to user -->
-<input type="hidden" name="_autoresponse" value="Thank you! Your enquiry has been received. / நன்றி! உங்கள் சேர்க்கை கோரிக்கை பெறப்பட்டது.">
+<section id="enquiry" class="enquiry-card">
+    <h2>Student Admission Enquiry</h2>
+    <p>மாணவர் சேர்க்கை விவரங்களை நிரப்பவும்</p>
 
-<input type="text" name="Student Name / மாணவர் பெயர்" placeholder="Student Name / மாணவர் பெயர்" required>
-<input type="tel" name="Mobile Number / தொலைபேசி எண்" placeholder="Mobile Number / தொலைபேசி எண்" required>
-<input type="text" name="Course Interested / ஆர்வமுள்ள படிப்பு" placeholder="Course Interested / ஆர்வமுள்ள படிப்பு">
-<input type="text" name="City / நகரம்" placeholder="City / நகரம்">
-<input type="email" name="Email / மின்னஞ்சல்" placeholder="Email / மின்னஞ்சல்">
+    <form action="https://formsubmit.co/gokulrajiaily@gmail.com" method="POST">
 
-<button type="submit">Submit Enquiry / கோரிக்கை சமர்ப்பிக்கவும்</button>
-</form>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New Student Admission Enquiry">
+        <input type="hidden" name="_next" value="thankyou.html">
+
+        <label>Student Name / மாணவர் பெயர்</label>
+        <input type="text" name="Student Name" required>
+
+        <label>Mobile Number / தொலைபேசி எண்</label>
+        <input type="tel" name="Mobile Number" pattern="[0-9]{10}" required>
+
+        <label>Course Interested / விரும்பும் படிப்பு</label>
+        <select name="Course Interested" required>
+            <option value="">-- Select Course --</option>
+            <option>Engineering</option>
+            <option>Arts & Science</option>
+            <option>Medical</option>
+            <option>Diploma</option>
+            <option>Other</option>
+        </select>
+
+        <label>12th / Diploma Percentage</label>
+        <input type="text" name="Percentage">
+
+        <label>City / நகரம்</label>
+        <input type="text" name="City">
+
+        <button type="submit">Submit Enquiry</button>
+    </form>
 </section>
 
 <!-- Footer -->
 <footer>
-<p>📞 Contact: 98765 43210</p>
-<p>© 2026 College Admission Guidance / கல்லூரி சேர்க்கை வழிகாட்டி</p>
+    <p>📞 Call / WhatsApp: 88838 11839</p>
+    <p>© 2026 College Admission Guidance</p>
 </footer>
 
 </body>
