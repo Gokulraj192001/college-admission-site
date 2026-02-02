@@ -131,5 +131,9 @@ footer {
     section {
         margin: 20px;
     }
+    .address_p {
+        font-size: 16px;
+    }
 }
+
 
