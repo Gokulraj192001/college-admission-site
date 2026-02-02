@@ -27,7 +27,7 @@ ul li {
 /* Header */
 header {
     height: 400px;
-    background: linear-gradient(#808080, rgba(0, 0, 0, 0.6)),
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url("./AG\ Logo.jpeg") center/cover no-repeat;
     color: white;
     display: flex;
@@ -135,6 +135,7 @@ footer {
         font-size: 13.3px;
     }
 }
+
 
 
 
