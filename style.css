@@ -12,8 +12,9 @@ section {
     padding: 30px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
+
 
 h2 {
     color: #0a58ca;
@@ -25,14 +26,16 @@ ul li {
 
 /* Header */
 header {
-    height: 300px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                url("banner.jpg") center/cover no-repeat;
+    height: 400px;
+    background: linear-gradient(#808080, rgba(0, 0, 0, 0.6)),
+        url("./AG\ Logo.jpeg") center/cover no-repeat;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-content h1 {
@@ -48,11 +51,17 @@ header {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background: #ffc107;
-    color: black;
+    background: orangered;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+}
+.btn:hover {
+    background: orange;
+}
+.btn:active {
+    background: black;
 }
 
 /* Enquiry Card */
@@ -90,7 +99,9 @@ header {
 .enquiry-card button:hover {
     background: #084298;
 }
-
+.enquiry-card button:active {
+    background: black;
+}
 /* Floating WhatsApp Button */
 .floating-btn {
     position: fixed;
@@ -102,7 +113,7 @@ header {
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     z-index: 100;
 }
 
@@ -117,7 +128,7 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     header {
-        height: 220px;
+        height: 520px;
     }
 
     section {
